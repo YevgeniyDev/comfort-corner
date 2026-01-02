@@ -1,0 +1,31 @@
+export const STICKERS = {
+  logo: "/stickers/bubu/bubu_happy.webm",
+  headerCorner: "/stickers/bubu_dudu/bubu&dudu_cuddles.webm",
+
+  sad: "/stickers/bubu/bubu_sad.webm",
+  guilt: "/stickers/bubu/bubu_notEnough.webm",
+  overthinking: "/stickers/bubu/bubu_spin.webm",
+  angry: "/stickers/bubu/bubu_offended.webm",
+  support: "/stickers/bubu/bubu_opora.webm",
+  sleep: "/stickers/bubu/bubu_sleep.webm",
+  anxiety: "/stickers/bubu/bubu_anxiety.webm",
+  overwhelmed: "/stickers/bubu/bubu_overwhelmed.webm",
+  miss: "/stickers/bubu/bubu_miss.webm",
+  noenergy: "/stickers/bubu/bubu_noEnergy.webm",
+
+  sadNot: "/stickers/bubu_dudu/bubu&dudu_sadN.webm",
+  guiltNot: "/stickers/bubu_dudu/bubu&dudu_guilt.webm",
+  overthinkingNot: "/stickers/bubu_dudu/bubu&dudu_overthinking.webm",
+  angryNot: "/stickers/bubu_dudu/bubu&dudu_angry.webm",
+  supportNot: "/stickers/bubu_dudu/bubu&dudu_sadness.webm",
+  sleepNot: "/stickers/bubu_dudu/bubu&dudu_sleep.webm",
+  anxietyNot: "/stickers/bubu_dudu/bubu&dudu_anxiety.webm",
+  overwhelmedNot: "/stickers/bubu_dudu/bubu&dudu_relax.webm",
+  missNot: "/stickers/bubu_dudu/bubu&dudu_miss.webm",
+  noenergyNot: "/stickers/bubu_dudu/bubu&dudu_noEnergy.webm",
+
+  jar: "/stickers/dudu/dudu_cooking.webm",
+  jarTap: "/stickers/dudu/dudu_airKiss.webm",
+  celebrate: "/stickers/bubu_dudu/bubu&dudu_celebrating.webm",
+  cuteHi: "/stickers/dudu/dudu_airKiss.webm",
+} as const;
