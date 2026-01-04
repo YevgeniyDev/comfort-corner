@@ -1,36 +1,169 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌸 Soft Pink Corner
 
-## Getting Started
+A small, gentle web app made as a safe and warm place for someone I love.
 
-First, run the development server:
+This project is not about productivity, performance, or “fixing” emotions.  
+It’s about **being nearby**, **soft reassurance**, and **care without pressure**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 💗 What this is
+
+**Soft Pink Corner** is a mobile-first Next.js app that contains:
+- “Open when…” cards for different emotional states  
+- A soft **appreciation jar** with gentle notes  
+- A **memories gallery** with photos and captions  
+- Animated **Bubu & Dudu** stickers for warmth and personality  
+
+Everything is intentionally calm, pink, and non-overwhelming.
+
+---
+
+## ✨ Features
+
+### 🫶 Open When Cards
+Small cards that can be opened during different emotional moments:
+- sadness
+- guilt
+- overthinking
+- anger
+- anxiety
+- loneliness
+- exhaustion
+- sleep
+
+Each card contains:
+- personal, reassuring text
+- a hidden note revealed on tap
+- a short calming ritual (breathing, grounding, etc.)
+
+---
+
+### 🫙 Appreciation Jar
+A place to receive one gentle note at a time:
+- random loving messages
+- no pressure to react
+- soft animations on interaction
+- designed to feel safe, not loud
+
+---
+
+### 📸 Soft Memories
+A scrapbook-style photo gallery:
+- mobile-first layout
+- tap a photo to view fullscreen
+- swipe / arrow navigation
+- captions instead of comments
+- subtle bounce animations on tap
+
+---
+
+### 🐱 Stickers
+Animated stickers are used instead of emojis:
+- Bubu & Dudu themed
+- `.webm` with `.mp4` fallback for iOS/Safari
+- gentle float and pop animations
+- no autoplay sound
+
+---
+
+## 🛠 Tech Stack
+
+- **Next.js 14** (App Router)
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Vercel** (deployment)
+
+No external UI libraries.  
+No analytics.  
+No tracking.
+
+---
+
+## 📁 Project Structure
+```
+├── app/
+│ ├── page.tsx # Home
+│ ├── open/[slug]/page.tsx # Open when pages
+│ ├── notes/page.tsx # Appreciation jar
+│ └── memories/page.tsx # Memories gallery
+│
+├── components/
+│ ├── Sticker.tsx # Sticker with MP4/WebM fallback
+│ ├── PinkShell.tsx # Layout wrapper
+│
+├── lib/
+│ ├── content.ts # All texts and cards
+│ └── stickers.ts # Sticker paths
+│
+├── public/
+│ ├── stickers/ # Bubu & Dudu stickers (.webm + .mp4)
+│ └── memories/ # Photos for gallery
+│
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Stickers & iOS Support
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+iOS Safari and Telegram WebView do not reliably support `.webm`.
 
-## Learn More
+To ensure stickers work everywhere:
+- every sticker has **two files**:
+  - `name.webm`
+  - `name.mp4`
+- the `Sticker` component uses `<source>` fallback:
+  - MP4 first (Safari)
+  - WebM second (Chrome/Android)
 
-To learn more about Next.js, take a look at the following resources:
+This is required for proper rendering on iPhones.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Deployment
 
-## Deploy on Vercel
+The project is deployed on **Vercel**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Steps:
+1. Push to GitHub
+2. Import repository in Vercel
+3. No special config required
+4. Every push triggers auto-deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🌱 Philosophy
+
+This app follows a few simple rules:
+- no pressure
+- no loud animations
+- no “fixing” emotions
+- no forcing communication
+
+Just presence, softness, and care.
+
+---
+
+## 🫂 Who this is for
+
+Originally made for **one specific person**.  
+But the idea can be reused for:
+- emotional support apps
+- relationship care projects
+- gentle UX experiments
+- personal creative coding
+
+---
+
+## 📄 License
+
+This project is personal and not intended for commercial use.
+
+Feel free to learn from it, adapt ideas, or reuse patterns —  
+but please treat the emotional intent with respect.
+
+---
+
+Made with care, patience, and a lot of pink 💗
